@@ -1,0 +1,164 @@
+.heroContainer{
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+    align-items: center;
+    width: calc(100vw - 8rem);
+    padding-inline: 4rem;
+    min-height: 100vh;
+    background-image: linear-gradient(to bottom,#151514,#2f4f4f);
+}
+.heroText{
+    max-width: 700px;
+}
+.heroText h1,.contact h2{
+    font-size: 3.5rem;
+    /* margin-bottom: 0.5rem; */
+}
+.heroText p,.highlightContainer p,.contact p{
+    text-align: justify;
+    font-size: 1.3rem;
+}
+.heroContainer img,.highlightContainer img{
+    filter: brightness(0.95);
+}
+.highlightContainer{
+    display: flex;
+    position: relative;
+    justify-content: flex-start;
+    flex-direction: column;
+    align-items: flex-start;
+    width: calc(100vw - 8rem);
+    padding-inline: 4rem;
+    min-height: 100vh;
+    background-color: darkslategrey ;
+    background-image: linear-gradient(to bottom, darkslategrey,darkcyan);
+    padding-bottom: 3rem;
+}
+.highlightContainer h2{
+    font-size: 3.5rem;
+    letter-spacing: -0.1rem;
+    margin-bottom: 0.8rem;
+
+}
+.highlightContainer p{
+    align-items: justify;
+    max-width: 700px;
+}
+.highlightContainer section,.contact section{
+    position: relative;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    width: 100%;
+    height: fit-content;
+}
+.img{
+    top: -10rem;
+    position: relative;
+}
+.highlightCardContainer{
+    position: relative;
+    height: 400px;
+    width: calc(320px - 4rem);
+    padding: 1.5rem;
+    background-color: #f1ecdf;
+    border-radius: 1.5rem;
+    border: #151514 solid   0.3rem;
+    color: #151514;
+    box-shadow: #151514 0.6rem 0.6rem;
+    margin: 2rem;
+
+}
+.highlightCardContainer p{
+    font-size: 0.9rem;
+    letter-spacing: 0.05rem;
+    text-align: justify;
+    font-weight: 500;
+    margin-bottom: 0.3rem;
+}
+.highlightCardContainer h3{
+    font-size: 1.5rem;
+    /* width: 9ch; */
+    margin-top: 1rem;
+    line-height: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+.HighlightCardsContainer{
+    position: relative;
+    top: -10rem;
+    flex-wrap: wrap;
+}
+.highlightCardContainer img{
+    object-fit: cover;
+    border-radius: 1rem;
+    
+}
+.highlightCardContainer>a{
+    text-decoration: none;
+    color: unset;
+    font-weight: 700;
+    font-size: 0.9rem;
+    letter-spacing: 0.1rem;
+    transition: all 0.4s;
+}
+.contact{
+    display: flex;
+    position: relative;
+    justify-content: flex-start;
+    flex-direction: column;
+    align-items: flex-start;
+    width: calc(100vw - 8rem);
+    padding-inline: 4rem;
+    min-height: 100vh;
+    background-color: darkslategrey ;
+    background-image: linear-gradient(to bottom,darkcyan, darkslategrey);
+    padding-bottom: 3rem;
+}
+.contactForm{
+    position: relative;
+}
+.contactForm > div{
+    padding-bottom: 1rem;
+    width: 700px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 1.2rem;
+}
+.contactForm input,.contactForm select,.contactForm textarea{
+    flex: 1;
+    font-size: 1.2rem;
+    background-color: #15151455;
+    border-radius: 0.8rem;
+    padding: 0.2rem;
+    border: none;
+    color: #f1ecdf;
+    padding-inline: 1rem;
+}
+.contactForm input:focus,.contactForm select:focus-visible,.contactForm textarea:focus{
+    outline: none;
+}
+.contactForm button{
+    float: right;
+    width: calc(100%);
+}
+.whatsapp{
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
+    background-color: #25D366;
+    color: #151514;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.8rem;
+    border-radius: 2rem;
+    cursor: pointer;
+}
+
+@media (max-width:1000px) {
+    .heroContainer img{
+        width: 350px;
+    }
+}

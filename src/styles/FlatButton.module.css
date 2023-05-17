@@ -1,0 +1,36 @@
+.flatButton{
+    padding: 1rem;
+    padding-inline: 3rem;
+    background-color: #ffe7a0;
+    color: #151514;
+    width: fit-content;
+    border-radius: 2rem;
+    font-weight: 500;
+    font-size: 1.2rem;
+    transition: all 0.3s;
+    cursor: pointer;
+    border: none;
+}
+.flatButton:hover{
+    background-color: #ffe7a059;
+    color: unset;
+}
+.outlineButton{
+    padding: 0.3rem;
+    padding-inline: 1rem;
+    color: #151514;
+    background-color: #f1ecdf;
+    width: calc(100% - 6rem);
+    text-align: center;
+    border-radius: 0.8rem;
+    font-weight: 600;
+    font-size: 1rem;
+    transition: all 0.3s;
+    cursor: pointer;
+    border: solid   0.2rem #151514;
+    box-shadow: #151514 0.2rem    0.2rem;
+}
+.bookButton{
+    position: absolute;
+    bottom: 1.5rem;
+}

@@ -1,0 +1,271 @@
+.readMore{
+    margin-inline: 4rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-top: 3rem;
+}
+.ReadMoreCard{
+    flex: 1;
+    margin: 1rem;
+    text-align: justify;
+    position: relative;
+}
+.ReadMoreCard span{
+    padding: 1rem 0.5rem;
+    margin: 1rem;
+    background-color: #30afb8;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 48px;
+}
+.ReadMoreCard span::after{
+    content: '';
+    position: absolute;
+    bottom:-0.5rem;
+    right: 0;
+    left: 0;
+    height: 0;
+    width: 0;
+    margin-left: auto;
+    margin-right: auto;
+    border-left: 0.7rem solid transparent;
+    border-right: 0.7rem solid transparent;
+    border-top: 0.7rem solid #30afb8;
+}
+.ReadMoreCard h3{
+    display: flex;
+    align-items: center;
+}
+.ReadMoreCard a{
+    text-decoration: none;
+    color: unset;
+    position: relative;
+    font-weight: 500;
+    right: 0;
+    transition: all 0.5s;
+}
+.ReadMoreCard a:hover{
+    color: #30afb8;
+    right: -0.5rem;
+}
+.ReadMoreCard a img{
+    position: relative;
+    bottom: -0.4rem;
+}
+
+.Services{
+    margin: 2rem;
+    border-radius: 2rem;
+    margin-inline: 4.5rem;
+    text-align: center;
+    width: calc(100% - 11rem);
+    background-color: #e9ffff;
+    padding: 3rem 1rem;
+    position: relative;
+}
+.CommonHeading::after{
+    position: absolute;
+    right: 0;
+    left: 0;
+    margin-left: auto;
+    margin-right: auto;
+    content: '';
+    width: 3rem;
+    height: 0.2rem;
+    background-color:#30afb8 ;
+    bottom: -1rem;
+    border-left: 3rem #f1f0ea  solid;
+    border-right: 3rem #f1f0ea  solid;
+}
+.ServicesContainer{
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    margin-left: auto;
+    margin-right: auto;
+}
+.ServiceCard{
+    position: relative;
+    width: 300px;    
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem;
+    overflow: hidden;
+    border-radius: 1rem;
+    transition: all 0.3s;
+    top: 0;
+    right: 0;
+}
+.ServiceCard:hover{
+    top: -0.3rem;
+    box-shadow: #00000077   -10px 10px;
+    right: -0.3rem;
+}
+.ServiceCard img{
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    object-fit: cover;
+    filter: brightness(0.5);
+}
+.ServiceCard    h3{
+    color: #f1f0ea;
+    font-weight: 300;
+    font-size: 1.3rem;
+    letter-spacing: -0.02rem;
+    z-index: 1;
+    margin: 0rem 1rem;
+    /* text-decoration: none; */
+}
+.ServicesContainer a{
+    text-decoration: none;
+}
+.regCardIcon{
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    rotate: 45deg;
+    color: #fdc498;
+  }
+.CommonHeading{
+    /* margin-top: ; */
+    text-align: center;
+    position: relative;
+    font-size: 2.5rem;
+    letter-spacing: 0.3rem;
+
+}
+
+.fullWidth{
+    margin: 10rem 0rem;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    height: calc(400px - 3rem);
+    /* padding-inline: 0.5rem; */
+    padding: 1.5rem 0.5rem;
+    width: calc(100vw - 1rem);
+    overflow: hidden;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    color: #f1f0ea;
+}
+.fullWidth img{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    filter: brightness(0.5);
+}
+.fullWidth h2,.fullWidth p,.fullWidth a{
+    z-index: 1;
+}
+.fullWidth h2{
+    letter-spacing: -0.05rem;
+    font-size: 1.7rem;
+}
+.fullWidth p{
+    font-size: 1.7rem;
+    letter-spacing: 0.05rem;
+    font-weight: 300;
+}
+.fullWidth button{
+    z-index: 1;
+    font-size: 1.5rem;
+    font-weight: 300;
+    /* margin-top: 1.5rem; */
+    padding: 0.4rem 1.2rem;
+    text-align: center;
+    color: #f1f0ea;
+    position: relative;
+    background-color: transparent;
+    border: 0.2rem  solid #f1f0ea;
+    transition: all 0.2s;
+    cursor: pointer;
+    border-radius: 3rem;
+}
+.fullWidth button:hover{
+    background-color: #00ffff99;
+    border-color: #00ffff99;
+    
+}
+.slider{
+    overflow: hidden;
+}
+.reviewsContainer{
+    position: relative;
+    width: 500%;
+    display: flex;
+    margin: 0;
+    left: 0;
+    animation: 20s slider infinite;
+}
+.reviewCard{
+    float: left;
+    width: calc(20% - 8.5rem);
+    margin: 2.75rem;
+    padding: 2rem;
+    border-radius: 0.5rem;
+    box-shadow: #00000077 -5px 5px 10px;
+    background-color: aliceblue;
+
+}
+.reviewCard p{
+    text-align: justify;
+    font-size: 0.9rem;
+}
+.reviewCard h4{
+    font-weight: 500;
+    margin: 0;
+    margin-top: 1.5rem;
+}
+.reviewCard h5{
+    font-weight: 500;
+    margin: 0;
+}
+
+@keyframes slider {
+    0%  {
+        left: 0;
+    }
+    20% {
+        left: 0;
+    }
+    25%{
+        left:-100%;
+    }
+    45%{
+        left: -100%;
+    }
+    50%{
+        left: -200%;
+    }
+    70%{
+        left: -200%;
+    }
+    75%{
+        left: -300%;
+    }
+    95%{
+        left: -300%;
+    }
+    100%{
+        left: -400%;
+    }
+}
+
+@media (max-width:1000px) {
+    .readMore{
+        flex-direction: column;
+    }
+}

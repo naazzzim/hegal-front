@@ -1,0 +1,140 @@
+.carouselCard{
+    position: absolute;
+    top: 0;
+    width: 100vw;
+    aspect-ratio: 1920/700;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    opacity: 0;
+    transition: opacity 0.5s;
+}
+.carouselCard img{
+    position: absolute;
+    /* z-index: ; */
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    filter: brightness(0.5);
+    object-fit: cover;
+}
+.carouselCard h2{
+    font-family: var(--helvetica);
+    z-index: 1;
+    letter-spacing: 0.2rem;
+    font-size: 3rem;
+    font-weight: 700;
+    text-align: center;
+    color: #f1f0ea;
+    position: relative;
+}
+.carouselCard p{
+    z-index: 1;
+    font-size: 1.3rem;
+    text-align: center;
+    color: #f1f0ea;
+    font-weight: 500;
+    position: relative;
+    margin-inline: 2rem;
+}
+.carouselCard button{
+    z-index: 1;
+    font-size: 1.5rem;
+    font-weight: 300;
+    /* margin-top: 1.5rem; */
+    padding: 0.4rem 1.2rem;
+    text-align: center;
+    color: #f1f0ea;
+    position: relative;
+    background-color: transparent;
+    border: 0.2rem  solid #f1f0ea;
+    transition: all 0.2s;
+    cursor: pointer;
+    /* border-radius: 0.3rem; */
+}
+.carouselCard button:hover{
+    background-color: #00ffff99;
+    border-color: #00ffff99;
+    
+}
+.carousel{
+    margin-top: 7.75rem;
+    position: relative;
+    background-color: black;
+    width: 100vw;
+    aspect-ratio: 1920/700;
+}
+.carouselCard.show{
+    opacity: 1;
+}
+.carousel > button{
+    position: absolute;
+    bottom:0;
+    z-index: 1000;
+}
+.next{
+    right: 2rem;
+}
+.prev{
+    right: 5rem;
+}
+.indexButton{
+    width: 3rem;
+    height: 0.2rem;
+    position: relative;
+    /* bottom: 0.3rem; */
+    background-color: #f1f0ea74;
+    cursor: pointer;
+}
+.indexButton::after{
+    display: block;
+    content: '';
+    width:0rem ;
+    height: 0.2rem;
+    background-color: #f1f0ea;
+    transition: width   1s;
+}
+@keyframes ani {
+    0%  {
+        width: 0rem;
+    }
+    100%{
+        width: 3rem;
+    }
+}
+.indexButton.current::after{
+    width:3rem ;
+    animation: 5s  ani normal   ;
+}
+
+.buttonContainer{
+    display: flex;
+    position: absolute;
+    bottom: 2rem;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: space-around;
+    align-items: flex-end;
+    max-width: 17rem;
+}
+
+@media (max-width:1000px) {
+    .buttonContainer{display: none;}
+    .carousel{
+        margin-top: calc(52px - 1rem);
+    } 
+    .carouselCard p,.prev,.next{
+        display: none;
+    }
+    .carouselCard h2{
+        font-size: 1.5rem;
+    }
+    .carouselCard button{
+        font-size: 1rem;
+    }
+}

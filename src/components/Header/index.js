@@ -14,13 +14,13 @@ const   contactData={
 
 const navItems=[
   [
-    {name:'Home',route:'/'},
+    {name:'Home',route:'#home'},
   ],
   [
-    {name:'Services',route:'/'}
+    {name:'Services',route:'#services'}
   ],
   [
-    {name:'Contact us',route:'/'}
+    {name:'Contact us',route:'#contact-us'}
   ]
 ]
 

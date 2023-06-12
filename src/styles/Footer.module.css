@@ -1,29 +1,58 @@
 .footer{
     display: flex;
-    justify-content: flex-start;
-    align-items: flex-start;
+    justify-content: space-between;
+    align-items: flex-end;
     background-color: #212120;
+    background-image: linear-gradient(to bottom,#196a6a,#2f4f4f);
     padding: 2rem 4.5rem;
+    /* border-top: 1px solid #f1ecdf; */
 }
-.linksContainer{
-    padding: 0px 2rem;
-    max-width: 200px;
+.logo img{
+    object-fit: contain;
+    align-self: flex-start;
+    top: 5rem;
+    position: relative;
+    left: -3rem;
 }
 .logo{
-    align-self: center;
-    
+    align-self: flex-start;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    position: relative;
 }
-.linksContainer a{
+.logo h3{
+    position: relative;
+    /* top: -5rem; */
+    /* font-size: 2rem; */
+    font-weight: 500;
+    text-transform: uppercase;
+    /* padding-left:3rem; */
+    /* max-width: 400px; */
+}
+.linksContainer{
+    /* top: -5rem; */
+    position: relative;
+    margin-bottom: 1.2rem;
+    /* padding: 0px 2rem; */
+    /* max-width: 200px; */
+}
+.socials{
+    margin-bottom: 1.2rem;
+}
+.linksContainer hr,.socials hr{
+    color: #f1ecdf;
+    min-width: 300px;
+}
+
+.linksContainer a,.socials a{
     text-decoration: none;
+    display: block;
     color: unset;
+    min-width: 300px;
 }
 .linksContainer li{
-    /* list-style: image('/icons/right.svg'); */
-    list-style-image: url('/icons/bullet.svg');
-    list-style-position: inside;
-    font-size: 1rem;
-    margin: 0.5rem;
-    font-weight: 300;
+    list-style: none;   
 }
 .linksContainer li::before{
 
@@ -32,7 +61,64 @@
     padding: 0;
     margin: 0;
 }
-.linksContainer h5{
+.linksContainer h3,.socials h3{
+    position: relative;
+    font-size: 1.5rem;
+    font-weight: 500;
+    line-height: 31px;
+    text-transform: uppercase;
     margin: 0;
-    font-size: 1.1rem;
+}
+.linksContainer h2,.socials h2{
+    font-size: 1.6rem;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+.linksContainer h3 img{
+    position: relative;
+    top: 0.2rem;
+    margin-left: 0.5rem;
+    transition: all 1s;
+    left: 0;
+}
+.linksContainer h3:hover img{
+    left: 3rem;
+}
+@media (max-width:1000px) {
+    .logo{
+        font-size: 0.9rem;
+    }
+    .linksContainer h2,.socials h2{
+        font-size: 1.2rem;
+    }
+    .linksContainer h3,.socials h3{
+        font-size: 1rem;
+    }
+    .linksContainer img{
+        height: 18px;
+        width: 18px;
+    }
+    .linksContainer a,.socials a,.footer hr{
+        min-width: 200px;
+    }
+    .footer{
+        padding-inline: 0.5rem;
+    }
+}
+@media (max-width:720px) {
+    .footer{
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        padding-top: 0px;
+        position: relative;
+        /* top: -5rem; */
+    }
+    .logo{
+        align-self: center;
+        max-width: 200px;
+    }
+    .footer hr{
+        margin:0px ;
+    }
 }

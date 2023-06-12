@@ -1,49 +1,64 @@
 import  styles from '@/styles/Footer.module.css'
 import Image from 'next/image'
 import Links from './Links'
+import Socials from './Socials'
 
-const footerData  = [
+
+const LinksData  = [
   {
-    title:'Important Links',
+    title:'Quick Links',
     list:[
       {
-        name:'Corporate Tax',
-        route:'#'
+        name:'About us',
+        route:'#about'
       },
       {
-        name:'goAML',
-        route:'#'
+        name:'Services',
+        route:'#services'
       },
       {
-        name:'VAT AUDIT',
-        route:'#'
+        name:'Contact Us',
+        route:'#contact-us'
       },
-      {
-        name:'Account & Book Keeping Services',
-        route:'#'
-      }
-    ]
-  },
-  {
-    title:'Recent Post',
-    list:[
-      {
-        name:'VAT Services',
-        route:'#'
-      }
+      // {
+      //   name:'Account & Book Keeping Services',
+      //   route:'#'
+      // }
     ]
   }
 ]
 
+const LogoData  = {
+  logo:'/hegal.png',
+  name:'Hegal Group Tax Consultants Co. LLC.',
+  addressl1:'Office No. 43-44,',
+  addressl2:'Dubai Municipality - Bur Dubai - Al Fahidi'
+}
+
+const ContactData = {
+  title:'Connect with us',
+  mail:'info@hegalgroup.ae',
+  phone:'+971562376716',
+  linkedIn:'https://www.linkedin.com/company/hegalgroup/',
+  whatsapp:'+971503431265'
+}
 const Footer = () => {
   return (
     <div  className={styles.footer}>
-      <Image  className={styles.logo} src={'/hegal.png'} alt='hegal group' width={200} height={200} />
+      <div className={styles.logo}>
+        <Image   src={'/hegal.png'} alt='hegal group' width={300} height={300} />
+        <h3>{LogoData.name}<br />{LogoData.addressl1} <br />{LogoData.addressl2} </h3>
+      </div>
+      <div>
       {
-        footerData.map(x=>
-            <Links item={x}/>
-            )
-      }
+        LinksData.map(x=>
+          <Links item={x}/>
+          )
+        }
+      </div>
+      <div>
+        <Socials data={ContactData} />
+      </div>
     </div>
   )
 }

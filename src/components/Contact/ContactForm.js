@@ -5,10 +5,19 @@ import Input from "./Input"
 import { useEffect } from "react"
 import Select from './Select'
 import Textfield from './Textfield'
-import FlatButton from '../FlatButton'
+import InputFlatButton from '../InputFlatButton'
+import emailjs from '@emailjs/browser';
+import { useRef } from 'react'
+import { SnackbarProvider,enqueueSnackbar } from 'notistack'
 
 const ContactForm = () => {
-    const [formData, setFormData] = useState({
+    const form1 = useRef()
+    const options   =   [
+        'Book a service',
+        'Provide feedback',
+        'Others'
+    ]
+    const formData ={
         name:{
             value:'',
             label:'Name'
@@ -33,44 +42,55 @@ const ContactForm = () => {
             value:'',
             label:'Message'
         }
-    })
-    const options   =   [
-        'Book a service',
-        'Provide feedback',
-        'Others'
-    ]
-
+    }
     // useEffect(() => {
     //   console.log(formData);
     // }, [formData])
-    
+    const [disabled, setDisabled] = useState(false)
 
-    const onChange  =   (name,label,value)  =>  {
-        setFormData(x   =>  ({...x,[name]:{
-            label,
-            value:value.target.value
-        }}))
-    }
+
+    const onSubmit  =   (e)  =>  {
+        e.preventDefault()
+        if(!disabled){
+            setDisabled(true)
+            console.log('Hi there');
+            return  (emailjs.sendForm('service_g5s96v7','template_aw13q17',form1.current,'rPGAAss1dor6ee9in')
+            .then(x=>{
+                console.log(x.text)
+                enqueueSnackbar("Message sent ✅!","success")
+            })
+            .catch(x=>{(
+                console.log(x.text))
+                enqueueSnackbar("Please try again later 🥲","error")
+            })
+            .finally(()=>{
+                form1.current.reset()
+                setDisabled(false)
+            })
+            )}
+        }
   return (
-    <div    className={styles.contactForm}>
+    <form  ref={form1}  className={styles.contactForm}  onSubmit={onSubmit}>
+        <SnackbarProvider   autoHideDuration={3000} anchorOrigin={{vertical:'bottom',horizontal:'center'}}/>
         {
             Object.keys(formData).map(  name    =>
                 {
                     if(name==='purpose')
                     {
-                        return  ( <Select  key={name} options={options} name={name}  label={formData[name].label} onChange={onChange} value={formData[name].value}  /> )
+                        return  ( <Select  key={name} options={options} name={name}  label={formData[name].label} /> )
                     }
                     if(name==='message')
                     {
-                        return  ( <Textfield  key={name} name={name} label={formData[name].label} onChange={onChange} value={formData[name].value}  /> )
+                        return  ( <Textfield  key={name} name={name} label={formData[name].label}/> )
                     }   
-                    return    (<Input key={name} name={name} label={formData[name].label} onChange={onChange} value={formData[name].value} />)
+                    return    (<Input key={name} name={name} label={formData[name].label}/>)
 
             }
             )
         }
-        <FlatButton text={'Submit'}/>
-    </div>
+            <InputFlatButton disabled={disabled} text={disabled?"Loading...":'Submit'}/>
+
+    </form>
   )
 }
 

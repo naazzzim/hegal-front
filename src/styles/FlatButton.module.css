@@ -1,15 +1,15 @@
 .flatButton{
-    padding: 1rem;
-    padding-inline: 3rem;
-    background-color: #ffe7a0;
-    color: #151514;
+    padding: 1rem !important;
+    padding-inline: 3rem !important;
+    background-color: #ffe7a0   !important;
+    color: #151514 !important;
     width: fit-content;
-    border-radius: 2rem;
-    font-weight: 500;
-    font-size: 1.2rem;
-    transition: all 0.3s;
-    cursor: pointer;
-    border: none;
+    border-radius: 2rem !important;
+    font-weight: 500 !important;
+    font-size: 1.2rem !important;
+    transition: all 0.3s !important;
+    cursor: pointer !important;
+    border: none !important;
 }
 .flatButton:hover{
     background-color: #ffe7a059;
@@ -33,4 +33,11 @@
 .bookButton{
     position: absolute;
     bottom: 1.5rem;
+}
+@media (max-width:1000px) {
+    .flatButton{
+        padding: 0.5rem !important;
+        padding-inline: 1.5rem !important;
+        font-size: 1rem !important;
+    }
 }

@@ -4,6 +4,8 @@ import NavItem from "./NavItem";
 import Hamburger from "./Hamburger";
 import DropDown from "./DropDown";
 import { useState } from "react";
+import Image from "next/image";
+import Link from "next/link";
 
 const Navbar = ({navItems}) => {
   const [isOpen, setIsOpen] = useState(false)
@@ -11,15 +13,15 @@ const Navbar = ({navItems}) => {
   const toggleHB  = ()  =>  setIsOpen(x=>!x)
 
   return (
-    <nav className={styles.navbar}>
-      <div    className={styles.logo}>
-          Hegal Group
-      </div>
+    <nav className={styles.navbar}  id="home">
+      <Link  href={'#home'}  className={styles.logo}>
+          <Image src={'/hegal.png'} width={150} height={150} alt="Hegal Group"/>
+      </Link>
       <ul className={styles.navItems}>
-          {navItems.map(x=> <NavItem  items={x} /> )}
+          {navItems.map(x=> <NavItem key={x[0].name}  items={x} /> )}
       </ul>
       <Hamburger toggleHB={toggleHB} isOpen={isOpen}/>
-      <DropDown navItems={navItems} isOpen={isOpen}/>
+      <DropDown navItems={navItems} toggleHB={toggleHB} isOpen={isOpen}/>
         
         
     </nav>

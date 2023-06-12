@@ -5,14 +5,16 @@ import OutlineButton from '../OutlineButton'
 
 
 const HighlightCard = ({item}) => {
-    const   desc    =   item.description.split(' ').slice(0,18).join(' ')
+    const   desc    =   item.description
+    // .split(' ').slice(0,45).join(' ')
   return (
     <div    className={styles.highlightCardContainer}>
         <Image src={item.icon} width={255} height={130} alt={'icon'}/>
         <h3>{item.title}</h3>
-        <p>{desc}...</p>
-        <Link href={'#'}>Read More</Link>
-        <OutlineButton className={styles.bookButton} text={'Book Service'}/>
+        <p>{desc}</p>
+        <Link href={'#contact-us'}>
+          <OutlineButton className={styles.bookButton} text={'Book Service'}/>
+        </Link>
     </div>
   )
 }

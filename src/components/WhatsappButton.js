@@ -1,12 +1,13 @@
 import Image from "next/image"
 import styles from '@/styles/Home2.module.css'
+import Link from "next/link"
 
 const WhatsappButton = () => {
   return (
-    <div    className={styles.whatsapp}>
+    <Link target="_blank" href={"https://wa.me/971503431265"}  className={styles.whatsapp}>
         {/* <p>WhatsApp Us!&nbsp;&nbsp;</p>  */}
-        <Image src={'/icons/whatsapp.svg'} width={36} height={36} />
-    </div>
+        <Image src={'/icons/whatsapp.svg'} width={36} height={36} alt="WhatsApp" />
+    </Link>
   )
 }
 

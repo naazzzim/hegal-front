@@ -4,14 +4,14 @@ import Image from 'next/image'
 
 const Highlight = ({data}) => {
   return (
-    <section    className={styles.highlightContainer}>
-        <section>
+    <section    className={styles.highlightContainer} id='services'>
+        <section    className={styles.highlightText}>
             <article>
                 <h2>{data.title}</h2>        
                 <p>{data.description}</p>
             </article>
             {/* <div> */}
-                <Image className={styles.img} src="/illustrations/Helping a partner-rafiki.svg" width={700} height={700} alt={'help business'} />
+                <Image className={styles.img} src="/illustrations/Helping a partner-amico(1).svg" width={600} height={600} alt={'help business'} />
             {/* </div> */}
         </section>
 

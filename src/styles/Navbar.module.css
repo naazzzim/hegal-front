@@ -1,9 +1,5 @@
 .header{
-    /* width: 100%; */
     min-height: 20px;
-    /* color: #ffdda2; */
-    /* background-color: #212120; */
-    backdrop-filter: blur(5px) ;
     padding: 0.5rem;
     padding-inline: 4rem;
     z-index: 100;
@@ -11,7 +7,14 @@
     top: 0;
     left: 0;
     right: 0;
-    /* box-shadow:    0px    2px 16px   3px   #212120; */
+}
+.logo img{
+    object-fit: contain;
+    left: -2rem;
+    position: relative;
+}
+.logo{
+    position: relative;
 }
 .header > *{
     margin-bottom: 0.5rem;
@@ -42,6 +45,8 @@
     justify-content: space-between;
     align-items: center;   
     position: relative;
+    max-height: 100px;
+    overflow-y: visible;
     /* z-index: 101; */
 }
 .navItems{
@@ -68,8 +73,9 @@
 .header a{
     text-decoration: none;
     color: unset;
-    font-weight: 500;
-    letter-spacing: 0.02rem;
+    font-weight: 600;
+    font-size: 1.1rem;
+    letter-spacing: -0.05rem;
     margin-inline: 0.5rem;
     /* display: block; */
 }
@@ -93,7 +99,7 @@
     width: 2rem;
     height: 2px;
     transform-origin: 50%;
-    background-color: green;
+    background-color: #f1ecdf;
     transition: all 0.3s;
 }
 .open.line1{
@@ -122,7 +128,8 @@
 }
 .navItemMob{
     position: relative;
-    z-index: -10000;
+    z-index: 1000;
+    text-align: end;
     /* color: yellow; */
 }
 .header hr{
@@ -130,19 +137,24 @@
 }
 .navItemMob a{
     margin: 0.5rem;
+    z-index: 1;
+    position: relative;
 }
 
 @media (max-width:1000px) {
+    .navbar{
+        z-index: 0;
+    }
     .absolute{
         display: flex;
         flex-direction: column;
         position: absolute;
-        width: calc(100% + 2rem);
-        background-color: #e9ffff;;
+        width: calc(100%);
+        background-color: transparent;
         z-index:-1;
         left: -1rem;
         right: 1rem;
-        top: calc(52px - 1rem);
+        top: calc(64px);
         /* top: -500px; */
         transition: all 0.5s;
         padding-left: 1rem;
@@ -150,7 +162,7 @@
     }
     .absolute.open{
         padding-top: 1rem;
-        top: calc(52px - 1rem);
+        /* top: calc(52px - 1rem); */
         z-index:-1;
         max-height: 800px;
 

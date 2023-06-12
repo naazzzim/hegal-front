@@ -1,10 +1,10 @@
 
 
-const Textfield = ({name, label,onChange,value}) => {
+const Textfield = ({name, label}) => {
   return (
     <div>
         <label htmlFor={name}>{label}:&nbsp;&nbsp;</label>
-        <textarea name={name} id={name} cols="30" rows="8"  value={value} onChange={(e)=>onChange(name,label,e)}></textarea>
+        <textarea name={name} id={name} cols="22" rows="10" required></textarea>
     </div>
   )
 }

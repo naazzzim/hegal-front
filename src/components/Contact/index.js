@@ -6,7 +6,7 @@ import ContactForm from './ContactForm'
 
 const Contact = ({data}) => {
   return (
-    <section    className={styles.contact}>
+    <section    className={styles.contact}  id='contact-us'>
         <section>
             <div>
                 <Image src="/illustrations/connect.svg" width={700} height={700} alt={'help'} />
@@ -16,10 +16,6 @@ const Contact = ({data}) => {
                 <p>{data.description}</p>
                 <ContactForm />
             </article>
-        </section>
-
-        <section className={styles.ghh}>
-
         </section>
     </section>
   )

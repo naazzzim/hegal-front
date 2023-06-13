@@ -64,6 +64,11 @@ const homeData  = {
         title:'Golden Visa',
         description:'The Golden visa allows foreign talents to reside, work, and study in the UAE with exclusive benefits, benefiting investors, entrepreneurs, scientists, students, graduates, humanitarians, and frontline heroes.',
         icon:'/illustrations/PRO.jpg'
+      },
+      {
+        title:'goAML',
+        description:'The goAML application is used by the Financial Intelligence Unit (FIU) to gather intelligence based on the suspicions of reporting entities to assist them in combatting money laundering and the financing of terrorism.',
+        icon:'/illustrations/goAML.jpg'
       }
     ]
   },

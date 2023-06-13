@@ -54,7 +54,7 @@
     height: fit-content;
 }
 .img{
-    top: -10rem;
+    /* top: -3rem; */
     position: relative;
 }
 .highlightCardContainer{
@@ -72,7 +72,7 @@
 }
 .highlightCardContainer p{
     font-size: 0.9rem;
-    letter-spacing: 0.05rem;
+    letter-spacing: -0.05rem;
     text-align: justify;
     font-weight: 500;
     margin-bottom: 0.3rem;
@@ -87,7 +87,7 @@
 }
 .HighlightCardsContainer{
     position: relative;
-    top: -7rem;
+    /* top: -3rem; */
     flex-wrap: wrap;
 }
 .highlightCardContainer img{
@@ -164,6 +164,10 @@
     min-width: 100vw;
     position: relative;
     z-index: 0;
+    object-fit: cover;
+    object-position: center;
+    margin: auto 0px;
+    display: block;
     /* height: 100vh; */
 }
 .videoHero{
@@ -172,6 +176,7 @@
     max-width: 100vw;
     overflow: hidden;
     max-height: 100vh;
+    text-align: center;
     /* background-image: linear-gradient(to bottom,#00000000 0%,); */
 }
 .videoAfter{

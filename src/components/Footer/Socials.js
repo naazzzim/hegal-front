@@ -13,6 +13,11 @@ const Socials = ({data}) => {
         <hr />
         <Link target="_blank"  href={data.linkedIn}><h3>LinkedIn</h3></Link>
         <hr />
+        <Link target="_blank"  href={data.instagram}><h3>Instagram</h3></Link>
+        <hr />
+        <Link target="_blank"  href={data.twitter}><h3>twitter</h3></Link>
+        <hr />
+
     </div>
   )
 }

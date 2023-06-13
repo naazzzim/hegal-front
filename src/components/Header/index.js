@@ -20,8 +20,11 @@ const navItems=[
     {name:'Services',route:'#services'}
   ],
   [
+    {name:'About us',route:'/about'}
+  ],
+  [
     {name:'Contact us',route:'#contact-us'}
-  ]
+  ],
 ]
 
 const Header = () => {

@@ -40,7 +40,9 @@ const ContactData = {
   mail:'info@hegalgroup.ae',
   phone:'+971562376716',
   linkedIn:'https://www.linkedin.com/company/hegalgroup/',
-  whatsapp:'+971503431265'
+  whatsapp:'+971503431265',
+  instagram:'https://instagram.com/hegalgroup_?igshid=ZGUzMzM3NWJiOQ==',
+  twitter:'https://twitter.com/HEGALGROUP?t=C9bC9RdmjAVt4YDIJkNgYw&s=08'
 }
 const Footer = () => {
   return (

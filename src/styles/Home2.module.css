@@ -142,6 +142,9 @@
 .contactForm input:focus,.contactForm select:focus-visible,.contactForm textarea:focus{
     outline: none;
 }
+.contactForm select{
+    -webkit-appearance: none;
+}
 .contactForm button{
     float: right;
     width: calc(100%);

@@ -164,15 +164,17 @@
     min-width: 100vw;
     position: relative;
     z-index: 0;
+    /* display: block; */
+    min-height: 100vh;
     object-fit: cover;
-    object-position: center;
-    margin: auto 0px;
-    display: block;
-    /* height: 100vh; */
+    /* object-position: center; */
 }
 .videoHero{
     position: relative;
     background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     max-width: 100vw;
     overflow: hidden;
     max-height: 100vh;

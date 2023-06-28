@@ -10,7 +10,7 @@ import emailjs from '@emailjs/browser';
 import { useRef } from 'react'
 import { SnackbarProvider,enqueueSnackbar } from 'notistack'
 
-const ContactForm = () => {
+const ContactForm = ({sel="Provide feedback"}) => {
     const form1 = useRef()
     const options   =   [
         'Book a service',
@@ -77,7 +77,7 @@ const ContactForm = () => {
                 {
                     if(name==='purpose')
                     {
-                        return  ( <Select  key={name} options={options} name={name}  label={formData[name].label} /> )
+                        return  ( <Select  key={name} options={options} name={name} sel={sel} label={formData[name].label} /> )
                     }
                     if(name==='message')
                     {

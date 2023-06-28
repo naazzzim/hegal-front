@@ -20,3 +20,8 @@ a{
   text-decoration: none;
     color: unset;
 }
+.table{
+  overflow: scroll;
+  /* background-color: yellow; */
+  max-width: calc(100vw - 2rem);
+}

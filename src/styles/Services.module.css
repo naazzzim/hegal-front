@@ -68,6 +68,10 @@
 }
 
 @media (max-width:1000px) {
+    .page iframe{
+        width: 360px;
+        height: 210px;
+    }
     .page{
         padding-inline:1rem ;
         width: calc(100vw - 2rem);

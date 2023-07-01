@@ -5,20 +5,20 @@ import ContactForm from './ContactForm'
 
 
 const Contact = ({data}) => {
-  return (
-    <section    className={styles.contact}  id='contact-us'>
-        <section>
-            <div>
-                <Image src="/illustrations/connect.svg" width={700} height={700} alt={'help'} />
-            </div>
-            <article    className={styles.heroText}>
-                <h2>{data.title}</h2>
-                <p>{data.description}</p>
-                <ContactForm />
-            </article>
+    return (
+        <section className={styles.contact} id='contact-us'>
+            <section>
+                <div>
+                    <Image src="/illustrations/connect.svg" width={700} height={700} alt={'help'}/>
+                </div>
+                <article className={styles.heroText}>
+                    <h2>{data.title}</h2>
+                    <p>{data.description}</p>
+                    <ContactForm/>
+                </article>
+            </section>
         </section>
-    </section>
-  )
+    )
 }
 
 export default Contact

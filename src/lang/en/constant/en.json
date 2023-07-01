@@ -1,0 +1,245 @@
+{
+    "language": "English",
+    "code": "en",
+    "navbar": [
+        [
+            {"name": "Home", "route": "#home"}
+        ],
+        [
+            {"name": "Services", "route": "#services"}
+        ],
+        [
+            {"name": "About us", "route": "/about?language=English"}
+        ],
+        [
+            {"name": "Contact us", "route": "#contact-us"}
+        ]
+    ],
+    "HeroVideo": {
+        "title": "Unlock Your Business Potential In Dubai",
+        "subTitle": "Worry no more! With us, your business will seamlessly establish and flourish in the land of opportunities!",
+        "leftButton": "Explore Our Services",
+        "rightButton": "Start My Business"
+    },
+    "hero": {
+        "title": "Who Are We & Why Us?",
+        "description": "We, as an international organization, deliver sustainable solutions and transformative strategies to clients in Asia, Europe, and the Middle East. Since 2018, we have expanded our formidable team, operating from global offices spanning the Middle East, Europe, Japan, China, Singapore, India, and esteemed local family business groups.",
+        "buttonText": "Read More",
+        "buttonLink": "#"
+    },
+    "aboutContent": {
+        "title": "Who Are We & Why Us?",
+        "desc":[
+            "Experience transformative growth with HEGAL, the dynamic business advisory firm that overcomes marketplace challenges. Our extensive expertise, instincts, and imagination fuel your success by creating winning value propositions. Navigating change and enhancing performance across growth, risk, operations, and regulations is our purpose.",
+            "As an international organization, HEGAL Group delivers sustainable solutions and transformative strategies to clients in Asia, Europe, and the Middle East. Since 2018, we have expanded our formidable team, operating from global offices spanning the Middle East, Europe, Japan, China, Singapore, India, and esteemed local family business groups.",
+            "Innovation lies at the heart of our approach, supported by an unwavering commitment to quality. With our multidimensional capabilities in Strategy, Finance, Taxation, Audits, People, Process, Technology, Sales, and Marketing, we offer integrated value propositions. Our comprehensive and unbiased advisory services forge trusted partnerships, serving as your single point of contact to conquer business challenges.",
+            "HEGAL embodies a strong ethos and a dedication to client success, making us the preferred global advisory partner. Stay ahead of the curve in a world of constant change and disruptions, empowered by our experience-driven solutions."
+        ]
+    },
+    "highlight": {
+        "title": "Our Featured Services",
+        "link": "Our Featured Services",
+        "description": "Looking to level up your business growth? We've curated a list of top-notch services that come highly recommended. These carefully selected offerings will ensure your business stays on the path to success and reliability. So, without further ado, let's dive into our featured services!",
+        "items": [
+            {
+                "title": "Corporate Tax",
+                "link": "Corporate Tax",
+                "description": "Corporate tax (CT) is a direct tax on the net income or profit of corporations and other entities. It is also known as Corporate Income Tax (CIT) or Business Profits Tax. The UAE has the lowest corporate income tax rate in the GCC region, set at 9% except for Bahrain.",
+                "icon": "/illustrations/ctax.jpg",
+                "list": [
+                    "Food service",
+                    "water service",
+                    "Electricity check",
+                    "VAT Registration service",
+                    "Car Tax registration Dubai",
+                    "Company formation check and registration"
+                ]
+            },
+            {
+                "title": "Audit",
+                "link": "Audit",
+                "description": "An audit is an independent examination of an organization's financial report, including balance sheets, income statements, statements of changes in equity, cash flow statements, and explanatory notes.",
+                "icon": "/illustrations/audit.jpg",
+                "list": [
+                    "Food service",
+                    "water service",
+                    "Electricity check",
+                    "VAT Registration service",
+                    "Car Tax registration Dubai",
+                    "Company formation check and registration"
+                ]
+            },
+            {
+                "title": "VAT",
+                "link": "VAT",
+                "description": "VAT was introduced in the United Arab Emirates on 1 January 2018. The general VAT rate is 5% and applies to most goods and services, with some goods and services subject to a 0% rate or an exemption from VAT (subject to specific conditions being met).",
+                "icon": "/illustrations/vat1.jpg",
+                "list": [
+                    "Food service",
+                    "water service",
+                    "Electricity check",
+                    "VAT Registration service",
+                    "Car Tax registration Dubai",
+                    "Company formation check and registration"
+                ]
+            },
+            {
+                "title": "UBO",
+                "link": "UBO",
+                "description": "UBO is the term for the person who ultimately owns or controls a customer in a transaction. Defined by FATF, a regulatory body against money laundering and terrorist financing, UBO includes those with ultimate legal control over a person or arrangement.",
+                "icon": "/illustrations/UBO1.jpg",
+                "list": [
+                    "Food service",
+                    "water service",
+                    "Electricity check",
+                    "VAT Registration service",
+                    "Car Tax registration Dubai",
+                    "Company formation check and registration"
+                ]
+            },
+            {
+                "title": "ESR Reporting",
+                "link": "ESR Reporting",
+                "description": "The Economic Substance Regulations require businesses to prove their genuine economic activity within the UAE and not solely seek tax advantages in low-tax jurisdictions. This prevents the practice of profit shifting from high-tax to low-tax regions.",
+                "icon": "/illustrations/ESR.jpg",
+                "list": [
+                    "Food service",
+                    "water service",
+                    "Electricity check",
+                    "VAT Registration service",
+                    "Car Tax registration Dubai",
+                    "Company formation check and registration"
+                ]
+            },
+            {
+                "title": "Accounting & Book Keeping",
+                "link": "Accounting & Book Keeping",
+                "description": "We cover every aspect of accountancy and aspire to understand your business needs for accounting and bookkeeping services in Dubai, UAE and long-term goals so we can tailor a package that would meet all your requirements",
+                "icon": "/illustrations/accounting.jpg",
+                "list": [
+                    "Food service",
+                    "water service",
+                    "Electricity check",
+                    "VAT Registration service",
+                    "Car Tax registration Dubai",
+                    "Company formation check and registration"
+                ]
+            },
+            {
+                "title": "Company Formation",
+                "link": "Company Formation",
+                "description": "Company formation in UAE is a simple step by step process and doesn't require endless visits to any lawyer. The procedures for company formation in UAE are recognized to be a legal one and it includes the registration of company name and licensing of business activity.",
+                "icon": "/illustrations/cform.jpg",
+                "list": [
+                    "Food service",
+                    "water service",
+                    "Electricity check",
+                    "VAT Registration service",
+                    "Car Tax registration Dubai",
+                    "Company formation check and registration"
+                ]
+            },
+            {
+                "title": "Golden Visa",
+                "link": "Golden Visa",
+                "description": "The Golden visa allows foreign talents to reside, work, and study in the UAE with exclusive benefits, benefiting investors, entrepreneurs, scientists, students, graduates, humanitarians, and frontline heroes.",
+                "icon": "/illustrations/PRO.jpg",
+                "list": [
+                    "Food service",
+                    "water service",
+                    "Electricity check",
+                    "VAT Registration service",
+                    "Car Tax registration Dubai",
+                    "Company formation check and registration"
+                ]
+            },
+            {
+                "title": "goAML",
+                "link": "goAML",
+                "description": "The goAML application is used by the Financial Intelligence Unit (FIU) to gather intelligence based on the suspicions of reporting entities to assist them in combating money laundering and the financing of terrorism.",
+                "icon": "/illustrations/goAML.jpg",
+                "list": [
+                    "Food service",
+                    "water service",
+                    "Electricity check",
+                    "VAT Registration service",
+                    "Car Tax registration Dubai",
+                    "Company formation check and registration"
+                ]
+            }
+        ],
+        "readMore": "Read more",
+        "bookService": "Book Service"
+    },
+    "contact": {
+        "title": "Contact Us",
+        "description": "Want to book a service? Have any opinions to share? We're happy to hear from you. Without further ado, fill the form below. We'll reach out to you in no time",
+        "form": {
+            "name": {
+                "value": "",
+                "label": "Name"
+            },
+            "email": {
+                "value": "",
+                "label": "Email"
+            },
+            "phone": {
+                "value": "",
+                "label": "Contact No."
+            },
+            "purpose": {
+                "value": "Book a service",
+                "constOptions": [
+                    "Book a service",
+                    "Provide feedback",
+                    "Others"
+                ],
+                "label": "Purpose"
+            },
+            "subject": {
+                "value": "",
+                "label": "Subject"
+            },
+            "message": {
+                "value": "",
+                "label": "Message"
+            }
+        },
+        "submit": "Submit",
+        "loading": "Loading..."
+    },
+    "quickLinks": [
+        {
+            "title": "Quick Links",
+            "list": [
+                {
+                    "name": "About us",
+                    "route": "#about"
+                },
+                {
+                    "name": "Services",
+                    "route": "#services"
+                },
+                {
+                    "name": "Contact Us",
+                    "route": "#contact-us"
+                }
+            ]
+        }
+    ],
+    "logoData": {
+        "logo": "/hegal.png",
+        "name": "Hegal Group Tax Consultants Co. LLC.",
+        "address1": "Office No. 43-44,",
+        "address2": "Dubai Municipality - Bur Dubai - Al Fahidi"
+    },
+    "contactData": {
+        "title": "Connect with us",
+        "mail": "info@hegalgroup.ae",
+        "phone": "+971562376716",
+        "linkedIn": "https://www.linkedin.com/company/hegalgroup/",
+        "whatsapp": "+971503431265",
+        "instagram": "https://instagram.com/hegalgroup_?igshid=ZGUzMzM3NWJiOQ==",
+        "twitter": "https://twitter.com/HEGALGROUP?t=C9bC9RdmjAVt4YDIJkNgYw&s=08"
+    }
+}

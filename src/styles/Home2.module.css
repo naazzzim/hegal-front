@@ -66,7 +66,7 @@
 }
 .highlightCardContainer{
     position: relative;
-    height: 420px;
+    height: 540px;
     width: calc(320px - 4rem);
     padding: 1.5rem;
     background-color: #f1ecdf;

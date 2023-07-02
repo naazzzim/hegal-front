@@ -140,6 +140,18 @@
     z-index: 1;
     position: relative;
 }
+.navbar select{
+    background-color: transparent;
+    color: #f1ecdf;
+    outline: none;
+    border: none;
+    font-weight: 600;
+    font-size: 1.1rem;
+    letter-spacing: -0.05rem;
+    margin-inline: 0.5rem;
+    position: relative;
+    top: -0.2rem;
+}
 
 @media (max-width:1000px) {
     .navbar{

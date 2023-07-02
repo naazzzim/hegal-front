@@ -26,7 +26,7 @@ const HighlightCard = ({ item }) => {
             <p>
                 {item.description}
             </p>
-            <Link href={`/services/${slug}`}><span className={styles.link}>{languageData.highlight.readMore} <Image className={styles.harrow} width={18} height={18} src={'/icons/right2.svg'}/> </span></Link>
+            <Link href={`/services/${slug}`}><span className={styles.link}>{languageData.highlight.readMore} <Image className={styles.harrow} width={18} height={18} alt='harrow' src={'/icons/right2.svg'}/> </span></Link>
             <Link href={'#contact-us'}>
                 <OutlineButton className={styles.bookButton} text={languageData.highlight.bookService}/>
             </Link>

@@ -3,16 +3,16 @@
     "code": "ar",
     "navbar": [
         [
-            {"name": "بيت", "route": "#home"}
+            {"name": "بيت", "route": "/"}
         ],
         [
-            {"name": "خدمات", "route": "#services"}
+            {"name": "خدمات", "route": "/#services"}
         ],
         [
-            {"name": "معلومات عنا", "route": "/about?language=Arabic"}
+            {"name": "معلومات عنا", "route": "/about"}
         ],
         [
-            {"name": "اتصل بنا", "route": "#contact-us"}
+            {"name": "اتصل بنا", "route": "/#contact-us"}
         ]
     ],
     "HeroVideo": {

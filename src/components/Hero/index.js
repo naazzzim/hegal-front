@@ -13,7 +13,7 @@ const Hero = ({data}) => {
             <div className={styles.heroText}>
                 <h1 className={styles.heroTitle}>{data.title}</h1>
                 <p className={styles.heroDescription}>{data.description}</p>
-                <Link href={`/about?language=${languageData.language}`}>
+                <Link href={`/about`}>
                     <FlatButton text={data.buttonText}/>
                 </Link>
             </div>

@@ -28,7 +28,7 @@ const Navbar = ({navItems}) => {
 
     return (
         <nav className={styles.navbar} id="home">
-            <Link href={'#home'} className={styles.logo}>
+            <Link href={'/'} className={styles.logo}>
                 <Image src={'/hegal.png'} width={150} height={150} alt="Hegal Group"/>
             </Link>
             <ul className={styles.navItems}>

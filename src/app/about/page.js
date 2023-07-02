@@ -4,20 +4,13 @@ import Image from 'next/image'
 import englishData from '@/lang/en/constant/en.json'
 import russianData from '@/lang/ru/constant/ru.json'
 import arabicData from '@/lang/ar/constant/ar.json'
-import {useEffect, useState} from "react";
+import {useSelector} from "react-redux";
 
 const about = () => {
 
-    const [language, setLanguage] = useState('');
-
-    useEffect(() => {
-        const urlParams = new URLSearchParams(window.location.search);
-        const lang = urlParams.get('language');
-        setLanguage(lang);
-    }, []);
+    const language = useSelector(state => state.language.language);
 
     let content = null;
-
     if (language === 'English') {
         content = englishData;
     } else if (language === 'Russian') {

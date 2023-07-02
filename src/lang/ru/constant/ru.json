@@ -3,16 +3,16 @@
     "code": "ru",
     "navbar": [
         [
-            {"name": "Дом", "route": "#home"}
+            {"name": "Дом", "route": "/"}
         ],
         [
-            {"name": "Услуги", "route": "#services"}
+            {"name": "Услуги", "route": "/#services"}
         ],
         [
-            {"name": "О нас", "route": "/about?language=Russian"}
+            {"name": "О нас", "route": "/about"}
         ],
         [
-            {"name": "Связаться с нами", "route": "#contact-us"}
+            {"name": "Связаться с нами", "route": "/#contact-us"}
         ]
     ],
     "HeroVideo": {

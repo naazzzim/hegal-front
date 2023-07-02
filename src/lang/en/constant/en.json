@@ -3,16 +3,16 @@
     "code": "en",
     "navbar": [
         [
-            {"name": "Home", "route": "#home"}
+            {"name": "Home", "route": "/"}
         ],
         [
-            {"name": "Services", "route": "#services"}
+            {"name": "Services", "route": "/#services"}
         ],
         [
-            {"name": "About us", "route": "/about?language=English"}
+            {"name": "About us", "route": "/about"}
         ],
         [
-            {"name": "Contact us", "route": "#contact-us"}
+            {"name": "Contact us", "route": "/#contact-us"}
         ]
     ],
     "HeroVideo": {

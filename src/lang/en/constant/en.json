@@ -42,6 +42,20 @@
         "description": "Looking to level up your business growth? We've curated a list of top-notch services that come highly recommended. These carefully selected offerings will ensure your business stays on the path to success and reliability. So, without further ado, let's dive into our featured services!",
         "items": [
             {
+                "title": "Company Formation",
+                "link": "Company Formation",
+                "description": "Company formation in UAE is a simple step by step process and doesn't require endless visits to any lawyer. The procedures for company formation in UAE are recognized to be a legal one and it includes the registration of company name and licensing of business activity.",
+                "icon": "/illustrations/cform.jpg",
+                "list": [
+                    "Food service",
+                    "water service",
+                    "Electricity check",
+                    "VAT Registration service",
+                    "Car Tax registration Dubai",
+                    "Company formation check and registration"
+                ]
+            },
+            {
                 "title": "Corporate Tax",
                 "link": "Corporate Tax",
                 "description": "Corporate tax (CT) is a direct tax on the net income or profit of corporations and other entities. It is also known as Corporate Income Tax (CIT) or Business Profits Tax. The UAE has the lowest corporate income tax rate in the GCC region, set at 9% except for Bahrain.",
@@ -116,20 +130,6 @@
                 "link": "Accounting & Book Keeping",
                 "description": "We cover every aspect of accountancy and aspire to understand your business needs for accounting and bookkeeping services in Dubai, UAE and long-term goals so we can tailor a package that would meet all your requirements",
                 "icon": "/illustrations/accounting.jpg",
-                "list": [
-                    "Food service",
-                    "water service",
-                    "Electricity check",
-                    "VAT Registration service",
-                    "Car Tax registration Dubai",
-                    "Company formation check and registration"
-                ]
-            },
-            {
-                "title": "Company Formation",
-                "link": "Company Formation",
-                "description": "Company formation in UAE is a simple step by step process and doesn't require endless visits to any lawyer. The procedures for company formation in UAE are recognized to be a legal one and it includes the registration of company name and licensing of business activity.",
-                "icon": "/illustrations/cform.jpg",
                 "list": [
                     "Food service",
                     "water service",

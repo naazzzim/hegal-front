@@ -208,6 +208,31 @@
     cursor: pointer;
     z-index: 1;
 }
+.language{
+    left: 2rem;
+    right: unset;
+    background-color: white;
+}
+.languageList{
+    position: fixed;
+    bottom: 6rem;
+    left: 2rem;
+    font-weight: 600;
+    font-size: 1.1rem;
+    letter-spacing: -0.05rem;
+    cursor: pointer;
+    max-height: 0px;
+    overflow-y: hidden;
+    transition: all 0.5s;
+    
+    /* margin-inline: 0.5rem; */
+}
+.languageList.open{
+    max-height: 500px;
+}
+.languageList>div{
+    margin-bottom: 1rem;
+}
 .videoHero video{
     min-width: 100vw;
     position: relative;

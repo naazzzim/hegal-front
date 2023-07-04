@@ -8,6 +8,8 @@ import Hero from "@/components/Hero";
 import Highlight from "@/components/Highlight";
 import Contact from "@/components/Contact";
 import WhatsappButton from "@/components/WhatsappButton";
+import LanguageButton from "@/components/LanguageButton";
+
 
 export default function Home() {
     const languageData = useSelector(state => state.language);
@@ -18,6 +20,7 @@ export default function Home() {
             <Highlight data={languageData.highlight}/>
             <Contact data={languageData.contact}/>
             <WhatsappButton/>
+            <LanguageButton />
         </div>
     );
 }

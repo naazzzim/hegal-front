@@ -213,15 +213,15 @@
             "list": [
                 {
                     "name": "О нас",
-                    "route": "#about"
+                    "route": "/#about"
                 },
                 {
                     "name": "Услуги",
-                    "route": "#services"
+                    "route": "/#services"
                 },
                 {
                     "name": "Связаться с нами",
-                    "route": "#contact-us"
+                    "route": "/#contact-us"
                 }
             ]
         }

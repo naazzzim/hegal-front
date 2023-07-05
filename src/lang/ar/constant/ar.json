@@ -214,15 +214,15 @@
             "list": [
                 {
                     "name": "معلومات عنا",
-                    "route": "#about"
+                    "route": "/#about"
                 },
                 {
                     "name": "خدمات",
-                    "route": "#services"
+                    "route": "/#services"
                 },
                 {
                     "name": "اتصل بنا",
-                    "route": "#contact-us"
+                    "route": "/#contact-us"
                 }
             ]
         }

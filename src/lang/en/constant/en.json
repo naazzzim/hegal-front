@@ -214,15 +214,15 @@
             "list": [
                 {
                     "name": "About us",
-                    "route": "#about"
+                    "route": "/#about"
                 },
                 {
                     "name": "Services",
-                    "route": "#services"
+                    "route": "/#services"
                 },
                 {
                     "name": "Contact Us",
-                    "route": "#contact-us"
+                    "route": "/#contact-us"
                 }
             ]
         }

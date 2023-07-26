@@ -9,7 +9,7 @@ const index = ({data}) => {
 
     return (
         <div className={styles.videoHero}>
-            <video autoPlay loop muted width={1920}>
+            <video autoPlay loop playsInline muted width={1920}>
                 <source src="/videos/hero.mp4"/>
             </video>
             <div className={styles.videoAfter}>
